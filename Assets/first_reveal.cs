@@ -15,10 +15,7 @@ public class first_reveal : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    
 
     private void OnTriggerEnter(Collider other)
     {
@@ -30,10 +27,10 @@ public class first_reveal : MonoBehaviour
             for (int i = 0; i < cieling_disappear.Count; i++)
             {
                 cieling_disappear[i].SetActive(false);
-
             }
-
+            
         }
+        
     }
 
 }
