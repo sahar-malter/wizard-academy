@@ -5,10 +5,12 @@ using UnityEngine;
 public class TurnOnPlayer : MonoBehaviour
 {
     PlayerMovement player;
+    MouseLook mouseLook;
     // Start is called before the first frame update
     void Start()
     {
         player = GetComponent<PlayerMovement>();
+        mouseLook = GetComponentInChildren<MouseLook>();
         StartCoroutine(PlayerControlDelay());
     }
 
@@ -17,5 +19,6 @@ public class TurnOnPlayer : MonoBehaviour
     {
         yield return new WaitForSeconds(5);
         player.enabled = true;
+        mouseLook.enabled = true;
     }
 }
