@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 
 public class BoxTriggerHolder : MonoBehaviour
@@ -14,7 +15,7 @@ public class BoxTriggerHolder : MonoBehaviour
     // Start is called before the first frame update
     IEnumerator RumbleDelay()
     {
-        yield return new WaitForSeconds(10f);
+        yield return new WaitForSeconds(12f);
         eventBoxes[0].SetActive(true);
     }
 }

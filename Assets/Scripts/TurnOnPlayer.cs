@@ -17,7 +17,7 @@ public class TurnOnPlayer : MonoBehaviour
     // Update is called once per frame
     IEnumerator PlayerControlDelay()
     {
-        yield return new WaitForSeconds(5);
+        yield return new WaitForSeconds(7);
         player.enabled = true;
         mouseLook.enabled = true;
     }
