@@ -15,7 +15,7 @@ public class BoxTriggerHolder : MonoBehaviour
     // Start is called before the first frame update
     IEnumerator RumbleDelay()
     {
-        yield return new WaitForSeconds(12f);
+        yield return new WaitForSeconds(11f);
         eventBoxes[0].SetActive(true);
     }
 }
